@@ -1,17 +1,34 @@
 # API ToptoFit - Ejercicios
 
-```
-HTTP 200 OK
-Allow: GET, HEAD, OPTIONS
-Content-Type: application/json
-Vary: Accept
+Para emepezar con el api de busqueda de ejercicios, necesitaras tener una clave de acceso privada para utilizarla.
 
+[Crear credencial del api!](http://toptofit.tech/home/)
+
+Configuración de cabeceras de autenticación en el API:
+
+```
+Content-Type: application/json,
+Authorization: 'Token '+yourAPIKEY
+```
+
+Ruta de peticción:
+https://toptofit.tech/api/v1.0/ejercicios/?limit=15&offset=15
+
+Cuerpo de la petición o datos a enviar, en formato json:
+
+```
 {
-    "count": 23,
-    "next": "https://toptofit.tech/api/v1.0/ejercicios/?limit=15&offset=15",
-    "previous": null,
-    "results": [
-        {
+"uid_user": "pqVXrGGDxTMnouf3vwmTK8QW0ae2",
+"id_app": 1,
+"private_key_app": "yourAppKey",
+}
+```
+
+
+Respuesta en formato json
+
+```
+{
             "id": 12,
             "nombre": "Bicicleta para abdomen ",
             "descripcion": "Para este movimiento elevarás la parte alta de tu espalda de forma lateral mientras levantas la rodilla opuesta, después harás el movimiento con el lado inverso completando así una repetición.",
@@ -118,5 +135,4 @@ Vary: Accept
         }
     ]
 }
-
 ```
