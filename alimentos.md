@@ -1,6 +1,6 @@
 # API ToptoFit - Alimentos
 
-Para emepezar con el api de busqueda de alimentos, necesitaras tener una clave de acceso privada para utilizarla.
+Para empezar con el api de busqueda de alimentos, necesitaras tener una clave de acceso privada para utilizarla.
 
 [Crear credencial del api!](http://toptofit.tech/home/)
 
@@ -18,7 +18,6 @@ Cuerpo de la petición o datos a enviar, en formato json:
 
 ```
 {
-"uid_user": "pqVXrGGDxTMnouf3vwmTK8QW0ae2",
 "id_app": 1,
 "private_key_app": "yourAppKey",
 }
